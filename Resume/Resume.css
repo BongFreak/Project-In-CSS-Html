@@ -2,5 +2,10 @@ body{
     margin: 0px;
 }
 #body-header{
-    height: 65vh;
+    height: 70vh;
+    opacity: 0.8;
+    background-image:url("./Image/Cover.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
