@@ -1,6 +1,7 @@
 body{
     margin: 0px;
 }
+/*Body header Image*/
 #body-header{
     height: 70vh;
     opacity: 0.8;
@@ -8,4 +9,30 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+/*Horizental List in header*/
+.horizental_list{
+    list-style: none;
+    padding: 0px;
+    
+}
+.horizental_list li{
+    display: inline-block ;
+    margin: 0px 20px 8px 0px;
+}
+.horizental_list li a{
+    color: #9cb0fb;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #00000061;
+    transition: color 0.5s, border-bottom 6s;
+
+}
+.horizental_list li a:hover{
+    color: bisque;
+    border-bottom: 1px solid white;
+}
+.text-align{
+    text-align: center;
 }
