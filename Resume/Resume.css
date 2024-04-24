@@ -1,16 +1,20 @@
 body{
     margin: 0px;
 }
-/*Body header Image*/
+
+/*-------------Body header Image----------------*/
+
 #body-header{
     height: 70vh;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     background-image:url("./Image/Cover.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-/*Horizental List in header*/
+
+/*--------Horizental List in header---------*/
+
 .horizental_list{
     list-style: none;
     padding: 0px;
@@ -21,18 +25,34 @@ body{
     margin: 0px 20px 8px 0px;
 }
 .horizental_list li a{
-    color: #9cb0fb;
+    display: inline-block;
+    color: #85868d;
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
-    background-color: #00000061;
+    /* background-color: #00000061; */
     transition: color 0.5s, border-bottom 6s;
 
 }
 .horizental_list li a:hover{
-    color: bisque;
+    color: #e1a007;
     border-bottom: 1px solid white;
 }
-.text-align{
+.text-center{
     text-align: center;
+}
+
+/*-----------Name & Social-icons---------- */
+
+#my-name{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+.social-icons li a img{
+    width: 1rem;
+    padding: 8px;
+}
+.social-icons li :hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
