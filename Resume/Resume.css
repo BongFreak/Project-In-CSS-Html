@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0px;
 }
@@ -48,7 +53,7 @@ body{
 }
 
 
-/*-----------Name & Social-icons---------- */
+/*-----------------Name & Social-icons---------------- */
 
 #name-social_icons-container{
     margin-top: 20vh;
@@ -110,6 +115,7 @@ section{
 }
 
 /*---------------About Sectiomn and My Image------------- */
+
 #about {
     height: auto;
     width: 100%;
@@ -121,8 +127,10 @@ section{
     width: 12rem;
     margin: auto;
     margin-top: -6rem;
-    margin-left: 45%;
-
+    /* margin-left: 45%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #my-image img{
     height: 100%;
@@ -142,27 +150,122 @@ section{
 /* .text-highlight{
     color: #e1a007;
 } */
-/*---------------Skill Section------------- */
+
+/*-------------------Skill Section---------------- */
+
 .skills-display {
     width: 70%;
-    /*height: 100px;*/
+    height: auto;
     /*border: 2px solid black; 	*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.skill-progress{
+    /* width: 10rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.5rem; */
+    width: 20%;
+        min-width: 180px;
+        height: auto;
+        border-radius: 25px;
+        background-color: lightgrey;
+        margin: 2rem 1rem;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+.skill-name{
+    font-size: 1rem;
+    margin-left: 10px;
+    padding-top: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+    
 }
 
+/*-------------------Portfolio Section---------------- */
+.portfolio-container{
+    width: 70%;
+    height: auto;
+    /*border: 2px solid black; 	*/
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio-image-container{
+        max-width: 300px;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        
+}
+.portfolio-image-container img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio-image-container:hover{
+    box-shadow: 0 0 20px #c8bb74;
+}
+.project-details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    color: transparent;
+    
 
+}
+.project-details p{
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    
+    
+}
+.portfolio-image-container:hover .project-details {
+    background-color: #80808078;
+    color: white;
+}
 
-/* Common Margin Classes */
+/* -------------Common Margin Classes----------- */
+
 .mb75px {
     margin-bottom: 75px;
 }
 
-/*common color classes */
+/*--------------common color classes----------- */
 
 .text-highlight {
     color: #e1a007;
     font-weight: 600;
 
+}
+.mb-purpel{
+    background-color: plum;
+}
+.mb-sky{
+    background-color: #6bc2d1;
+}
+.mb-orange{
+    background-color: #ff5722;
+}
+.mb-yellow{
+    background-color: rgb(245, 191, 126);
+}
+/* ------------Percent Class------------- */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
 }
