@@ -183,6 +183,97 @@ section{
     font-family: "Roboto Condensed", sans-serif;
     
 }
+/*-------------------Experience Section---------------- */
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+    padding: 5px;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+    margin: 5px;
+}
+.timeline-box::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #bdab83;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+.timeline-box:nth-child(2n) {
+    margin-left: 50%;
+}
+.timeline-box:nth-child(2n)::after{
+    left: -14%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    left: 111%;
+}
+#timeline-driver{
+    position: absolute;
+    border: 2px dashed rgb(240, 216, 109);
+    width: 0;
+    left: 50%;
+    top: 8%;
+   
+    height: 75%;
+}
+.timeline-traveler{
+    position: sticky;
+    top: 8%;
+    z-index: 2;
+       
+}
+.timeline-traveler span{
+    transform: rotate(180deg);
+    margin-left: -12px;
+    display: inline-block;
+    color: darkorange;
+    
+}
+
+
+
+
+/* ----------------- */
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 8%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height: 75%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 10;
+    /* Increased z-index to ensure it appears above other elements */
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+    z-index: 20;
+    /* Added z-index to the icon itself */
+}
+
+
+
+
 
 /*-------------------Portfolio Section---------------- */
 .portfolio-container{
