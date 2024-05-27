@@ -183,11 +183,11 @@ section{
     font-family: "Roboto Condensed", sans-serif;
     
 }
+
 /*-------------------Experience Section---------------- */
 .timeline{
     position: relative;
     width: 75%;
-    border: 2px solid black;
     padding: 5px;
 }
 .timeline-box{
@@ -195,7 +195,6 @@ section{
     width: 40%;
     left: 5%;
     min-height: 150px;
-    border: 2px solid black;
     margin: 5px;
 }
 .timeline-box::after{
@@ -218,6 +217,8 @@ section{
 .timeline-box:nth-child(2n+1)::after {
     left: 111%;
 }
+
+
 #timeline-driver{
     position: absolute;
     border: 2px dashed rgb(240, 216, 109);
@@ -227,6 +228,10 @@ section{
    
     height: 75%;
 }
+.experience-designation {
+    font-size: 1.4rem;
+    
+}
 .timeline-traveler{
     position: sticky;
     top: 8%;
@@ -235,43 +240,142 @@ section{
 }
 .timeline-traveler span{
     transform: rotate(180deg);
-    margin-left: -12px;
+    margin-left: -23px;
     display: inline-block;
     color: darkorange;
+    font-size: 3rem;
     
 }
 
-
-
-
-/* ----------------- */
-#timeline-divider {
+.timeline-container{
+ padding: 20px;
+}
+.timeline-logo img{
     position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+    
+}
+/*-------------------Education Section---------------- */
+.education {
+    position: relative;
+    width: 75%;
+    padding: 5px;
+}
+
+.education-box {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px;
+}
+
+.education-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.education-box:nth-child(2n) {
+    margin-left: 50%;
+}
+
+.education-box:nth-child(2n)::after {
+    left: -14%;
+}
+
+.education-box:nth-child(2n+1)::after {
+    left: 111%;
+}
+
+
+#education-driver {
+    position: absolute;
+    border: 2px dashed rgb(240, 216, 109);
     width: 0;
-    top: 8%;
     left: 50%;
-    border: 2px dashed #0096fa6b;
+    top: 8%;
+
     height: 75%;
-    color: #433E3F;
 }
 
-#timeline-divider .timeline-traveller {
+.degree {
+    font-size: 1.4rem;
+
+}
+
+.education-traveler {
     position: sticky;
-    top: 135px;
-    z-index: 10;
-    /* Increased z-index to ensure it appears above other elements */
+    top: 8%;
+    z-index: 2;
+
 }
 
-#timeline-divider i {
+.education-traveler span {
     transform: rotate(90deg);
-    margin-top: -35px;
-    display: block;
-    color: #2857a4;
-    z-index: 20;
-    /* Added z-index to the icon itself */
+    margin-left: -23px;
+    display: inline-block;
+    color: darkorange;
+    font-size: 3rem;
+
 }
 
+.education-container {
+    padding: 20px;
+}
 
+.education-logo img {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.degree-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.degree-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.institute-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
 
 
 
@@ -425,6 +529,15 @@ button:focus {
 .mb75px {
     margin-bottom: 75px;
 }
+.text-align-justify{
+    text-align: justify;
+}
+.text-align-end {
+    text-align: end;
+}
+.front-family-roboto{
+    font-family: "Roboto Condensed", sans-serif;
+}
 
 /*--------------common color classes----------- */
 
@@ -437,13 +550,19 @@ button:focus {
     background-color: plum;
 }
 .mb-sky{
-    background-color: #6bc2d1;
+    background-color: #4D9FF0;
 }
 .mb-orange{
     background-color: #ff5722;
 }
 .mb-yellow{
     background-color: rgb(245, 191, 126);
+}
+.color-gold{
+    color: #eb822d;
+}
+.color-sky{
+    color: #4D9FF0;
 }
 /* ------------Percent Class------------- */
 .eighty-five-percent{
