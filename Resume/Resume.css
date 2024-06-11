@@ -5,7 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 body {
     margin: 0px;
 }
