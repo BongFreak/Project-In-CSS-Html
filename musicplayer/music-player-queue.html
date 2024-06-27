@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/12a41c30dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./music-player.css">
+</head>
+
+<body>
+    <!--================================================== Nav Bar ===================================== -->
+
+    <nav class="nav-bar">
+        <!--============================================ Title & Logo ==================================-->
+        <div class="title-combo">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-clipart/20221027/ourmid/pngtree-music-logo-png-image_6389182.png"
+                    alt="logo" height="70" weight="70">
+            </div>
+            <div class="web-name">
+                <h2>Bong Freak</h2>
+                <h5>Player</h5>
+
+            </div>
+        </div>
+        <!--=========================================== Fevaurite =====================================-->
+        <div class="fav">
+            <a href="#">
+                <h3>Favourites</h3>
+            </a>
+        </div>
+        <!--========================================== Search box ======================================-->
+        <div class="search-box">
+            <form action="">
+                <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Search.." name="search" id="search">
+                <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+            </form>
+        </div>
+        <!--=========================================== Icons ==========================================-->
+        <div class="">
+            <i class="fa-solid fa-bell" id="notification"></i>
+        </div>
+
+        <div class="">
+            <i class="fas fa-user-circle" id="profile"></i>
+        </div>
+
+    </nav>
+    <!--============================================ Main Section ==================================== -->
+    <main class="container ">
+        <!--======================================= Aside Section ==================================== -->
+
+        <aside class="aside section-1">
+            <!--================================== Banner Section ==================================== -->
+            <header class="banner">
+                <div class="box" id="b1">
+                    <img src="https://i.ytimg.com/vi/sZKff_4ED64/maxresdefault.jpg" alt="Banner-1">
+                </div>
+                <div class="box" id="b2">
+                    <img src="https://i.ytimg.com/vi/0xLfzICSmFU/maxresdefault.jpg" alt="Banner-2">
+                </div>
+                <div class="box" id="b3">
+                    <img src="https://i.ytimg.com/vi/hq2eUxQvT_w/maxresdefault.jpg" alt="Banner-3">
+                </div>
+            </header>
+
+
+            <!--================================== Latest Release ==================================== -->
+            <section class="latest-releases">
+                <h2 class="heading-text">Latest Release</h2>
+                <div class="card-display">
+                    <div class="card">
+                        <figure>
+                            <a href=""><img src="https://i1.sndcdn.com/artworks-V4ZzyvVYGNxNnALY-LN2j0w-t500x500.jpg"
+                                    alt=""></a>
+                            <figcaption class="song-info">
+                                <h2>Filhaal</h2>
+                                <p>Jan 2, 2024</p>
+                            </figcaption>
+                        </figure>
+                        <div class="options">
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>4:44</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <a href=""><img
+                                    src="https://preview.redd.it/kbr8l2a3fbtb1.jpg?auto=webp&s=35e89452d8b5e9c2a47a418a1c7d1f84d3ad8994"
+                                    alt=""></a>
+                            <figcaption class="song-info">
+                                <h2>Jehda Nasha</h2>
+                                <p> Fab 21, 2024</p>
+                            </figcaption>
+                        </figure>
+                        <div class="options">
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>4:44</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <a href=""><img
+                                    src="https://c.saavncdn.com/895/Stay-English-2021-20210706223809-500x500.jpg"
+                                    alt=""></a>
+                            <figcaption class="song-info">
+                                <h2>Stay</h2>
+                                <p> March 1, 2024</p>
+                            </figcaption>
+                        </figure>
+                        <div class="options">
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>4:44</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <a href=""><img
+                                    src="https://c.saavncdn.com/036/Desperado-English-2023-20230607035147-500x500.jpg"
+                                    alt=""></a>
+                            <figcaption class="song-info">
+                                <h2>Desperado</h2>
+                                <p> March 1, 2024</p>
+                            </figcaption>
+                        </figure>
+                        <div class="options">
+                            <label><i class="fa-solid fa-ellipsis"></i></label>
+                            <p>4:44</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--================================== Popular Artist ==================================== -->
+            <section class="popular-artist">
+                <h2 class="heading-text">Popular Artist</h2>
+
+                <div class="artist-display">
+                    <div class="artist-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/artists/Arijit_Singh_002_20230323062147_500x500.jpg"
+                                alt="Arijit Singh">
+                        </a>
+                        <div class="artist-name">
+                            <h5>Arijit Singh</h5>
+                        </div>
+                    </div>
+                    <div class="artist-content">
+                        <a href="#">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/l1whaq80/poster/z/z/0/small-poster-bollywood-singer-sonu-nigam-wall-poster-300gsm-matt-original-imagddykyy3sghuh.jpeg?q=90&crop=false"
+                                alt="Sonu Nigam">
+                        </a>
+                        <div class="artist-name">
+                            <h5>Sonu Nigam</h5>
+                        </div>
+                    </div>
+                    <div class="artist-content">
+                        <a href="#">
+                            <img src="https://static01.nyt.com/images/2022/10/24/arts/24taylor-notebook3/24taylor-notebook3-superJumbo.jpg"
+                                alt="Taylor Swift">
+                        </a>
+                        <div class="artist-name">
+                            <h5>Taylor Swift</h5>
+                        </div>
+                    </div>
+                    <div class="artist-content">
+                        <a href="#">
+                            <img src="https://img.indiaforums.com/person/640x480/0/2164-atif-aslam.jpg?c=7vP7E1"
+                                alt="Atif Aslam">
+                        </a>
+                        <div class="artist-name">
+                            <h5>Atif Aslam</h5>
+                        </div>
+                    </div>
+                    <div class="artist-content">
+                        <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL2hxgeHw_lwkK9k8H0A-h0bHKfHAcIH8Gww&s"
+                                alt="Justin Bieber">
+                        </a>
+                        <div class="artist-name">
+                            <h5>Justin Bieber</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--================================== Music Station ==================================== -->
+            <section class="music-station">
+                <h2 class="heading-text">Music Station</h2>
+
+                <div class="music-display">
+                    <div class="music-mood">
+                        <a href="#">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/love-album-cover-image-design-template-0f1279a32ef34a7a6b62599e36a8e558_screen.jpg?ts=1561544979"
+                                alt="love">
+                        </a>
+                        <div class="mood-name">
+                            <h5>Love</h5>
+                        </div>
+                    </div>
+                    <div class="music-mood">
+                        <a href="#">
+                            <img src="https://cdn.dribbble.com/users/6496406/screenshots/16198969/media/397320dcbe8a8f7e766738dff7cc7007.jpg?resize=400x300&vertical=center"
+                                alt="Retro">
+                        </a>
+                        <div class="mood-name">
+                            <h5>Retro</h5>
+                        </div>
+                    </div>
+                    <div class="music-mood">
+                        <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod7Q0vAp97baNt-FzxfQ3z23FJrFCKIILlw&s"
+                                alt="Chill">
+                        </a>
+                        <div class="mood-name">
+                            <h5>Chill</h5>
+                        </div>
+                    </div>
+                    <div class="music-mood">
+                        <a href="#">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuuRGsCTjJZSd9AUChEDliZ8JCz7FLWYetYewxsPdbU8pBNoWDShwWNtwjYXl4j5XZTI&usqp=CAU"
+                                alt="Workout">
+                        </a>
+                        <div class="mood-name">
+                            <h5>Workout</h5>
+                        </div>
+                    </div>
+                    <div class="music-mood">
+                        <a href="#">
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pop-album-art-design-template-905e52dee4423a5f33b0c508665cf7bf_screen.jpg?ts=1598362553"
+                                alt="Pop">
+                        </a>
+                        <div class="mood-name">
+                            <h5>Pop</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--================================== Big Music Station ==================================== -->
+            <section class="b-music-station heading-text">
+                <div class="b-music-display">
+                    <div class="b-music">
+                        <a href=""><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkNEfa1xq5B80OGoQNm4xAeY9x9f1H0g_OQKOzIAhcuJEFROB-uj2DQHDdT-d1DKBh_I&usqp=CAU"
+                                alt="party">
+
+                        </a>
+                        <div class="b-music-name">
+                            <p>Party</p>
+                        </div>
+                    </div>
+                    <div class="b-music">
+                        <a href=""><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT0hy_FHQRN-tbdZVPyMsw6nbTN9Rr31sKERMMJebx6-S1eaiu7OXQJglN_2xZhi-ry_A&usqp=CAU"
+                                alt="electronic">
+                        </a>
+                        <div class="b-music-name">
+                            <p>Electronic</p>
+                        </div>
+                    </div>
+                    <div class="b-music">
+                        <a href=""><img src="https://zinginstruments.com/wp-content/uploads/people-on-a-road-trip.jpg"
+                                alt="Road Trip">
+
+                        </a>
+                        <div class="b-music-name">
+                            <p>Road Trip</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--================================== Latest English ==================================== -->
+            <section class="latest-english">
+                <h2 class="heading-text">Latest English</h2>
+
+                <div class="song-display">
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/055/Believe-Unknown-2022-20221201222837-500x500.jpg"
+                                alt="Believe">
+                        </a>
+                        <div class="song-name">
+                            <h5>Believe</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/929/Eyes-Closed-English-2018-20180424120039-500x500.jpg"
+                                alt="Eyes Closed">
+                        </a>
+                        <div class="song-name">
+                            <h5>Eyes Closed</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/272/Hey-Future-Hey-Past-English-2018-20171216020519-500x500.jpg"
+                                alt="Hey Future">
+                        </a>
+                        <div class="song-name">
+                            <h5>Hey Future</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/554/Nothing-Syence-Remix--English-2020-20200515235029-500x500.jpg"
+                                alt="Nothing Syence">
+                        </a>
+                        <div class="song-name">
+                            <h5>Nothing Syence</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/151/Top-Of-The-World-English-2021-20210803050446-500x500.jpg"
+                                alt="Top of the World">
+                        </a>
+                        <div class="song-name">
+                            <h5>Top of the World</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--================================== Latest Hindi ==================================== -->
+            <section class="latest-hindi">
+                <h2 class="heading-text">Latest Hindi</h2>
+
+                <div class="song-display">
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/055/Believe-Unknown-2022-20221201222837-500x500.jpg"
+                                alt="Believe">
+                        </a>
+                        <div class="song-name">
+                            <h5>Believe</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/929/Eyes-Closed-English-2018-20180424120039-500x500.jpg"
+                                alt="Eyes Closed">
+                        </a>
+                        <div class="song-name">
+                            <h5>Eyes Closed</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/272/Hey-Future-Hey-Past-English-2018-20171216020519-500x500.jpg"
+                                alt="Hey Future">
+                        </a>
+                        <div class="song-name">
+                            <h5>Hey Future</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/554/Nothing-Syence-Remix--English-2020-20200515235029-500x500.jpg"
+                                alt="Nothing Syence">
+                        </a>
+                        <div class="song-name">
+                            <h5>Nothing Syence</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                    <div class="song-content">
+                        <a href="#">
+                            <img src="https://c.saavncdn.com/151/Top-Of-The-World-English-2021-20210803050446-500x500.jpg"
+                                alt="Top of the World">
+                        </a>
+                        <div class="song-name">
+                            <h5>Top of the World</h5>
+                            <p>Aug 19, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </aside>
+        <!--================================== Aside-2 ==================================== -->
+        <aside class="aside section-2">
+            <!--================================== Aside-Header ==================================== -->
+
+            <header>
+                <h1 class="heading-text inline">Queue</h1>
+                <div class="inline right dropdown">
+                    <button class="dropdown-button">
+                        <h3>Queue</h3>
+                    </button>
+                    <ul class="dropdown-list">
+                        <li><a href="./music-player.html">Playlist</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--================================== Playlist-Content ==================================== -->
+            <div class="playlist" id="queue">
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>01.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>02.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i.scdn.co/image/ab67616d0000b2732f2623c93d48a736c6f23cef" alt="">
+                            </div>
+                            <div>
+                                <h2>Believer</h2>
+                                <h4>Imagine Dragons</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>03.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i.scdn.co/image/ab67616d0000b27305a6cbc1f2a0e36b818f1351" alt="">
+                            </div>
+                            <div>
+                                <h2>Ring My Bell</h2>
+                                <h4>Enrique Iglesias</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>04.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i.scdn.co/image/ab67616d0000b273969ade17263bdd132628cdde" alt="">
+                            </div>
+                            <div>
+                                <h2>Maula Mere</h2>
+                                <h4>Roop Kumar</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>05.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>06.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>07.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>08.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <div class="playlist-content">
+                        <div class="content-left">
+                            <div style="margin-right: 4px;">
+                                <h2>09.</h2>
+                            </div>
+                            <div class="coverer">
+                                <img class="small-img inline-block"
+                                    src="https://i1.sndcdn.com/artworks-000447726216-yoz9es-t500x500.jpg" alt="">
+                            </div>
+                            <div>
+                                <h2>I'm a Mess</h2>
+                                <h4>Bebe Rexha</h4>
+                            </div>
+                        </div>
+
+                        <div class="content-right">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+    <!--================================== Footer ==================================== -->
+    <footer>
+        <div class="play-song-info trans-bg">
+            <div class="con-left trans-bg">
+                <div class="footer-img">
+                    <img class="small-img inline-block"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9ZhIHQhfvvVXlLIODoIkir_MKT_DHQgdIw&s"
+                        alt="">
+                </div>
+                <div class="trans-bg">
+                    <div class="font-mid trans-bg" id="song-name">Blank Space</div>
+                    <p class="trans-bg" id="artist">Taylor Swift</p>
+                </div>
+            </div>
+            <div class="con-right trans-bg side-margin-4px">
+                <i class="fa-solid fa-ban"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="player trans-bg"">
+                        <div class=" player-contorls trans-bg">
+            <div><i class="fa-solid fa-shuffle"></i></div>
+            <div><i class="fa-solid fa-backward-step"></i></div>
+            <div><i class="fa-solid fa-play"></i></div>
+            <div><i class="fa-solid fa-forward-step"></i></div>
+            <div><i class="fa-solid fa-arrow-rotate-left"></i></div>
+        </div>
+        <div class="slider">
+            <div class="start-time">0:00</div>
+            <div class="slide-ctr">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myrange">
+            </div>
+            <div class="end-time">5:00</div>
+        </div>
+        </div>
+        <div class="extras trans-bg">
+            <div><i class="fa-solid fa-list"></i></div>
+            <div><i class="fa-solid fa-laptop"></i></div>
+            <div><i class="fa-solid fa-volume-high"></i></div>
+            <div></div>
+            <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

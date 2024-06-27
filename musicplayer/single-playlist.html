@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Playlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/12a41c30dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./music-player.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <!--============================================ Title & Logo ==================================-->
+        <div class="title-combo">
+            <div class="logo">
+                <img src="https://png.pngtree.com/png-clipart/20221027/ourmid/pngtree-music-logo-png-image_6389182.png"
+                    alt="logo" height="70" weight="70">
+            </div>
+            <div class="web-name">
+                <h2>Bong Freak</h2>
+                <h5>Player</h5>
+    
+            </div>
+        </div>
+        <!--=========================================== Fevaurite =====================================-->
+        <div class="fav">
+            <a href="#">
+                <h3>Favourites</h3>
+            </a>
+        </div>
+        <!--========================================== Search box ======================================-->
+        <div class="search-box">
+            <form action="">
+                <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Search.." name="search" id="search">
+                <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+            </form>
+        </div>
+        <!--=========================================== Icons ==========================================-->
+        <div class="icons">
+            <div class="notification">
+                <i class="fa-solid fa-bell" id="notification"></i>
+            </div>
+            <div class="profile">
+                <i class="fas fa-user-circle" id="profile"></i>
+            </div>
+        </div>
+    
+    
+    
+    </nav>
+    <main>
+        <!--======================================= Aside Section 1 ==================================== -->
+        <aside class="aside section-1">
+            <!--======================================= Playlist Card ==================================== -->
+            <header class="banner">
+                <div class="playlist-card">
+                    <div class="playlist-img">
+                        <img src="https://w0.peakpx.com/wallpaper/97/713/HD-wallpaper-arjith-singh-bollywood-singer.jpg" alt="">
+                    </div>
+                    <!--======================================= Playlist Details ==================================== -->
+                    <div class="playlist-details">
+                        <h2>Arjith Singh</h2>
+                        <h4>Singer</h4>
+                        <span class="followers">
+                            <p>1.3k Followers</p>
+                        </span>
+                        <br>
+                        <br>
+                        <p>Arijit Singh, a renowned Indian playback singer, has captivated audiences with his soulful voice. His emotive renditions
+                        in Bollywood songs have left an indelible mark. Whether it’s the haunting “Tum Hi Ho” from Aashiqui 2 or the romantic
+                        “Raabta” from Agent Vinod, Arijit’s talent shines through. His ability to convey raw emotions through music has made him
+                        a beloved artist.</p>
+                        <div class="button">
+                            <button class="button button1">Play All</button>
+                            <button class="button button2">Follow</button>
+                        </div>
+                        <p id="track-no">277 Tracks | 128 Albums</p>
+                        
+                    </div>
+                </div>
+            </header>
+            <!--======================================= Song Display ==================================== -->
+            <section>
+                <div class="song-display">
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                    
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                    
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                    
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                    
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+                </div>
+
+            
+            </section>
+
+        </aside>
+        <!--======================================= Aside Section 2 ==================================== -->
+        <aside class="aside section-2">
+            <div class="similar-artist">
+                <header>
+                    <h1>Similar Artists</h1>
+                </header>
+                <div class="artist-display">
+                    <div class="artist-card">
+                        <div class="artist">
+                            <div class="artist-img">
+                
+                                <img src="https://static.toiimg.com/thumb/msid-80172462,width-400,resizemode-4/80172462.jpg"
+                                    alt="">
+                            </div>
+                            <div class="artist-details">
+                                <h2>Atif Aslam</h2>
+                                <h4>Singer</h4>
+                            </div>
+                        </div>
+                
+                        <div class="artist-extra">
+                                <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist">
+                            <div class="artist-img">
+                    
+                                <img src="https://static.toiimg.com/thumb/msid-80172462,width-400,resizemode-4/80172462.jpg" alt="">
+                            </div>
+                            <div class="artist-details">
+                                <h2>Atif Aslam</h2>
+                                <h4>Singer</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="artist-extra">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist">
+                            <div class="artist-img">
+                    
+                                <img src="https://static.toiimg.com/thumb/msid-80172462,width-400,resizemode-4/80172462.jpg" alt="">
+                            </div>
+                            <div class="artist-details">
+                                <h2>Atif Aslam</h2>
+                                <h4>Singer</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="artist-extra">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                        
+                    
+                    
+                    
+            </div>
+            <div class="recently-played">
+                <header>
+                    <h1>Recently Played</h1>
+                </header>
+                <div class="song-display">
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song">
+                            <div class="song-img">
+                
+                                <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():strip_exif():format(jpg)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8903431975058_20231211173133/8903431975058/1702297209998/resources/8903431975058.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img-details">
+                                <h2>O Mahi</h2>
+                                <h4>Arijit Singh</h4>
+                            </div>
+                        </div>
+                
+                        <div class="song-extra">
+                            <div class="extra-icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="extra-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <div class="play-song-info ">
+            <div class="con-left ">
+                <div class="footer-img">
+                    <img class="small-img inline-block"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH9ZhIHQhfvvVXlLIODoIkir_MKT_DHQgdIw&s"
+                        alt="">
+                </div>
+                <div class="footer-name">
+                    <div class="font-mid" id="song-name">Blank Space</div>
+                    <p class="" id="artist">Taylor Swift</p>
+                </div>
+            </div>
+            <div class="con-right side-margin-4px">
+                <i class="fa-solid fa-ban"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+    
+        <div class="player">
+            <div class=" player-contorls trans-bg">
+                <div><i class="fa-solid fa-shuffle"></i></div>
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div><i class="fa-solid fa-play"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+                <div><i class="fa-solid fa-arrow-rotate-left"></i></div>
+            </div>
+            <div class="slider">
+                <div class="start-time">
+                    0:00
+    
+                </div>
+                <div class="slide-ctr">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myrange">
+                </div>
+                <div class="end-time">
+                    5:00
+    
+                </div>
+            </div>
+        </div>
+        <div class="extras trans-bg">
+            <div><i class="fa-solid fa-list"></i></div>
+            <div><i class="fa-solid fa-laptop"></i></div>
+            <div><i class="fa-solid fa-volume-high"></i></div>
+            <div></div>
+            <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+        </div>
+    </footer>
+    
+</body>
+
+
+</html>
